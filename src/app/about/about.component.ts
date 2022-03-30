@@ -11,8 +11,7 @@ import { Leader } from '../shared/leader';
 export class AboutComponent implements OnInit {
 
   constructor(private leaderservice: LeadersService,
-    private route: ActivatedRoute,
-    private location: Location) { }
+    private route: ActivatedRoute) { }
     leaders:Leader[];
   ngOnInit() {
     this.leaders = this.leaderservice.getLeaders();

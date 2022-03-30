@@ -62,10 +62,11 @@
   
   <div fxFlex>
     <mat-grid-list cols="2" rowHeight="200px">
-        <mat-grid-tile *ngFor="let leader of leaders" >
-        <img height="200px" src={{leader.image}} alt={{leader.name}}>
+        <mat-grid-tile *ngFor="let leader of leaders">
+        <img height="200px" src={{leader.image}} alt={{leader.name}}><span>{{leader.name}}</span>
         
       </mat-grid-tile>
+      
     </mat-grid-list>
   </div>
 </div>
