@@ -14,6 +14,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { DishDetailComponent } from './dish-detail/dish-detail.component';
 import { DishService } from './services/dish.service';
 import { LeadersService } from './services/leaders.service';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -27,7 +28,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; 
-
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +57,13 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     AppRoutingModule,
     MatDialogModule,
-    FormsModule
+    FormsModule,
+    MatProgressSpinnerModule,
+
+    MatSelectModule,
+    MatSlideToggleModule,
+    ReactiveFormsModule
+
 
   ],
   providers: [DishService,LeadersService],
