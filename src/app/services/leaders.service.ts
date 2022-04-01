@@ -21,6 +21,6 @@ export class LeadersService {
   }
 
 
-a
+
   constructor() { }
 }
